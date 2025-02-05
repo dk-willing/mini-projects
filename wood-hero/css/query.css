@@ -1,0 +1,108 @@
+@media (max-width: 84em) {
+  :root {
+    --p-font: 1.4rem;
+    --h1-font: 7rem;
+  }
+
+  header {
+    padding: 1.4rem 8%;
+  }
+
+  section {
+    padding: 0 10%;
+  }
+
+  .hero {
+    gap: 2.4rem;
+  }
+
+  .social-icons {
+    left: -5%;
+  }
+
+  .btn-box {
+    right: 10%;
+    bottom: 20%;
+  }
+
+  .btn-box i {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 60em) {
+  header {
+    padding: 2rem 5%;
+    /* backdrop-filter: blur(1rem); */
+  }
+  :root {
+    --p-font: 1.6rem;
+    --md-font: 2.4rem;
+  }
+
+  .hero {
+    padding-top: 10rem;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .hero-img {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-img img {
+    width: 80%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .social-icons,
+  .btn-box {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    backdrop-filter: blur(30px);
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    padding: 2.4rem 4.8rem;
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav.open {
+    right: 0;
+    backdrop-filter: blur(2rem);
+  }
+
+  .nav a:link,
+  .nav a:visited {
+    display: block;
+    padding: 0;
+    margin: 1.5rem 5rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 30em) {
+  :root {
+    --h1-font: 5rem;
+  }
+}

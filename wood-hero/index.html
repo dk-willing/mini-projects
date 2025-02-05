@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Remix icons link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Boxicons link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+
+    <!-- Animation stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="Official Logo" />
+      </a>
+
+      <ul class="nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Exhibition</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="nav-side">
+        <a href="#" class="n-btn">Say Hello</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- The class='bx bx-menu' is from the boxicons we used -->
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h3 data-aos="fade-up" data-aos-duration="1500">Carving Art</h3>
+        <h1
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+          data-aos-delay="100"
+        >
+          Bringing <br />
+          Wood to Life
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+          Expertly carved wooden sculptures and figurines that showcase the
+          natural beauty and versatility of wood
+        </p>
+      </div>
+
+      <div class="hero-img">
+        <img
+          src="img/main.png"
+          alt="Sculpture of an accient man"
+          class="hero-img"
+          data-aos="zoom-in-right"
+          data-aos-duration="1500"
+          data-aos-delay="300"
+        />
+      </div>
+    </section>
+
+    <div
+      class="btn-box"
+      data-aos="zoom-out"
+      data-aos-duration="1500"
+      data-aos-delay="500"
+    >
+      <i class="ri-arrow-down-line"></i>
+    </div>
+
+    <div class="social-icons">
+      <a
+        href="#"
+        data-aos="fade-in"
+        data-aos-duration="1500"
+        data-aos-delay="600"
+        ><i class="ri-facebook-line"></i
+      ></a>
+      <a
+        href="#"
+        data-aos="fade-in"
+        data-aos-duration="1500"
+        data-aos-delay="700"
+        ><i class="ri-instagram-line"></i
+      ></a>
+      <a
+        href="#"
+        data-aos="fade-in"
+        data-aos-duration="1500"
+        data-aos-delay="800"
+        ><i class="ri-dribbble-line"></i
+      ></a>
+    </div>
+
+    <!-- Custom js file -->
+    <script src="js/script.js"></script>
+
+    <!-- Animation js initialization -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
+  </body>
+</html>
