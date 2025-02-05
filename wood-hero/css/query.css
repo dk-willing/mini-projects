@@ -35,17 +35,39 @@
 @media (max-width: 60em) {
   header {
     padding: 2rem 5%;
+    background-color: #19130eda;
     /* backdrop-filter: blur(1rem); */
   }
+
   :root {
-    --p-font: 1.6rem;
-    --md-font: 2.4rem;
+    --h1-font: 5rem;
+    --p-font: 1.4rem;
+    --md-font: 2rem;
+  }
+
+  .n-btn:link,
+  .n-btn:visited {
+    padding: 1rem 2rem;
   }
 
   .hero {
     padding-top: 10rem;
-    grid-template-columns: 1fr;
-    height: auto;
+    height: 100vh;
+  }
+
+  .btn-box {
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .btn-box i {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    top: 55%;
   }
 
   .hero-img {
@@ -59,18 +81,49 @@
   .hero-img img {
     width: 80%;
   }
+}
+
+@media (max-width: 42em) {
+  :root {
+    --h1-font: 4.5rem;
+    --p-font: 1.2rem;
+    --md-font: 1.4rem;
+  }
+
+  .logo img {
+    width: 60%;
+  }
+
+  .n-btn:link,
+  .n-btn:visited {
+    padding: 0.8rem 1.6rem;
+  }
+
+  #menu-icon {
+    font-size: 4rem;
+  }
+
+  header {
+    padding: 1.2rem 6%;
+  }
 
   .hero-text {
     text-align: center;
   }
 
-  .social-icons,
-  .btn-box {
-    display: none;
+  .hero {
+    padding-top: 10rem;
+    grid-template-columns: 1fr;
+    height: auto;
   }
 
   #menu-icon {
     display: block;
+  }
+
+  .social-icons,
+  .btn-box {
+    display: none;
   }
 
   .nav {
@@ -79,8 +132,6 @@
     top: 100%;
     backdrop-filter: blur(30px);
     display: flex;
-    width: 100%;
-    height: 50vh;
     flex-direction: column;
     padding: 2.4rem 4.8rem;
 
@@ -98,11 +149,5 @@
     padding: 0;
     margin: 1.5rem 5rem;
     font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 30em) {
-  :root {
-    --h1-font: 5rem;
   }
 }

@@ -165,6 +165,10 @@ section {
   position: absolute;
   bottom: 12%;
   right: 17%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-box i {
@@ -199,7 +203,7 @@ section {
 
 .social-icons i {
   display: block;
-  font-size: 3rem;
+  font-size: var(--md-font);
   color: var(--text-color);
   margin: 2.8rem 0;
 
