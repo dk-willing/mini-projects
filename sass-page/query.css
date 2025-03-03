@@ -1,0 +1,86 @@
+@media (min-width: 85em) {
+  .container {
+    max-width: 120rem;
+  }
+
+  .img-1 img {
+    position: relative;
+    width: 170%;
+    left: -30%;
+    top: -20%;
+  }
+
+  .header {
+    height: 85vh;
+  }
+}
+
+@media (max-width: 63em) {
+  .container {
+    max-width: 75rem;
+  }
+
+  .hero-img {
+    background-position: top center;
+    background-size: 50%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text br {
+    display: none;
+  }
+
+  .hero-text p {
+    width: 100%;
+  }
+
+  .hero-text h1::after {
+    left: 25rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-img img {
+    position: relative;
+    left: 45%;
+    transform: translate(-50%, 0);
+    width: 100%;
+  }
+
+  .footer-box {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+  }
+
+  .testimonial-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .testimonial-btn.left {
+    left: -20%;
+  }
+
+  .testimonial-btn.right {
+    top: 65%;
+    right: -10%;
+    transform: translate(50%, -10%);
+  }
+}
